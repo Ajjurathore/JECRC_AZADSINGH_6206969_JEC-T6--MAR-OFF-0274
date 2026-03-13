@@ -2,51 +2,35 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 
+# launch browser
 driver = webdriver.Chrome()
 
-driver.get("https://www.cricbuzz.com")
-sleep(5)
+# 1. open website
+driver.get("https://www.amazon.in/")
+sleep(4)
 
-css1 = driver.find_element(By.CSS_SELECTOR,"a[title='Live Cricket Score']")
-print("CSS selectors working")
-print(css1)
-css2 = driver.find_element(By.CSS_SELECTOR,"a[title='Cricket Schedule']")
-print("CSS selectors working")
-print(css2)
-css3 = driver.find_element(By.CSS_SELECTOR,"a[title='Cricket Series']")
-print("CSS selectors working")
-print(css3)
+print("Amazon website opened")
 
-print("CSS selectors working")
+# 2. locate search bar using CSS selector (ID)
+search_bar = driver.find_element(By.CSS_SELECTOR,"#twotabsearchtextbox")
+print("Search bar located")
 
+# 3. locate Amazon logo using CSS selector
+logo = driver.find_element(By.CSS_SELECTOR,"#nav-logo-sprites")
+print("Amazon logo located")
 
+# 4. locate Cart link/icon
+cart = driver.find_element(By.CSS_SELECTOR,"#nav-cart")
+print("Cart icon located")
 
-x1 = driver.find_element(By.XPATH,"//a[@title='Live Cricket Score']")
-print("XPath attribute working")
-print(x1)
-x2 = driver.find_element(By.XPATH,"//a[@title='Cricket Schedule']")
-print("XPath attribute working")
-print(x2)
-x3 = driver.find_element(By.XPATH,"//a[@title='Cricket Series']")
-print("XPath attribute working")
-print(x3)
+# 5. locate Sign in link using descendant selector
+signin = driver.find_element(By.CSS_SELECTOR,"#nav-tools a")
+print("Sign in section located")
 
-print("XPath attribute working")
-
-
-
-t1 = driver.find_element(By.XPATH,"//a[text()='Series']")
-print("XPath inner text working")
-print(t1)
-t2 = driver.find_element(By.XPATH,"//a[text()='Teams']")
-print("XPath inner text working")
-print(t2)
-t3 = driver.find_element(By.XPATH,"//a[text()='News']")
-print("XPath inner text working")
-print(t3)
-
-print("XPath inner text working")
-
+# 6. locate all category links under navigation bar
+categories = driver.find_elements(By.CSS_SELECTOR,"#nav-xshop a")
+print("Number of category links:", len(categories))
 
 sleep(3)
+
 driver.quit()
