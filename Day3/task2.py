@@ -1,3 +1,14 @@
+## Task 2
+Write a Selenium script for the following:
+
+1. Go to `https://the-internet.herokuapp.com/login`
+2. Locate the username field using XPath with tag and `name` attribute.
+3. Locate the password field using XPath with tag and `id` attribute.
+4. Locate the **Login** button using XPath with tag and `type` attribute.
+5. Locate the **Elemental Selenium** link using exact text with `text()`.
+6. Locate the main heading **Login Page** using `contains()` with text.
+
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
