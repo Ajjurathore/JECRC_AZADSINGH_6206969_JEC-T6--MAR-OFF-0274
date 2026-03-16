@@ -1,3 +1,6 @@
+## Task 1
+### Create a Selenium script in Python to demonstrate browser control commands such as opening a website, maximizing the window, navigating backward and forward, refreshing the page, minimizing the window, and quitting the browser using ChromeDriver.
+
 from selenium import webdriver
 from time import sleep
 
