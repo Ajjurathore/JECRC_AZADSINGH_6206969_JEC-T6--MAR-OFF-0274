@@ -1,3 +1,13 @@
+## Task 3
+Write a Selenium script for the following:
+
+1. Navigate to `https://www.amazon.in/`
+2. Locate the main search bar using its ID with a CSS Selector.
+3. Locate the Amazon logo using a CSS Selector.
+4. Locate the **Cart** link/icon using a CSS Selector.
+5. Locate the **Sign in** link in the navigation bar using descendant selector syntax.
+6. Locate all the main category links in the navigation bar under **All**, using their common parent. Find all the `a` tags within it using `find_elements()` and print the count.
+  
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
