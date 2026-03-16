@@ -1,3 +1,10 @@
+## Task 2
+
+### Multi-Site Navigation
+
+Write a Selenium script that opens multiple websites sequentially, including a few e-commerce sites such as **Souled Store** and **Nike**, a news website, and the official **Python** website. The script should wait for 3 seconds after opening each website, print the title of each page, and finally close the browser.
+
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
