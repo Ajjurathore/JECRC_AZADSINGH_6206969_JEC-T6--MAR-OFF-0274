@@ -1,3 +1,7 @@
+## Task 1
+Write a Python Selenium script that opens a single website and demonstrates the use of different Selenium locators to identify web elements. The script should use ID, Name, Class Name, Tag Name, CSS Selector, and XPath locators on the same webpage, print confirmation messages for each located element, and display counts where multiple elements are found.
+
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
