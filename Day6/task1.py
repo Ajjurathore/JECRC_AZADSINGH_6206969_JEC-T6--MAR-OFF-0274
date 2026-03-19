@@ -1,31 +1,33 @@
-from time import sleep
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.select import Select
+from time import sleep
 
 driver = webdriver.Chrome()
-driver.get("https://www.lenskart.com/eyeglasses/brands/vincent-chase-eyeglasses/cat-eye.html?dir=desc&gan_data=true&sort=created")
-driver.maximize_window()
 
-search = driver.find_element(By.XPATH,"//input[@class = 'aa-Input']")
-search.clear()
-search.send_keys("osm glass", Keys.ENTER)
-sleep(4)
+driver.get('https://the-internet.herokuapp.com/')
+sleep(3)
 
+cblink = driver.find_element(By.LINK_TEXT, "Checkboxes")
+print('cblink found')
 
-filter = driver.find_element(By.ID,"sortByDropdown")
-dropdown = Select(filter)
-dropdown.select_by_value("created")
-sleep(1)
-# dropdown.select_by_index(1)
-# sleep(5)
-# dropdown.select_by_text("Low to High")
-# sleep(5)
-select  = driver.find_element(By.XPATH,"//div[@class='sc-bf32d8a7-0 gOVKHN']/descendant::div[1]")
-select.click()
-sleep(4)
+ddlink = driver.find_element(By.PARTIAL_LINK_TEXT, "Drag and Drop")
+print('ddlink found')
 
+listdata = driver.find_elements(By.TAG_NAME, "li")
+print('total li:', len(list_data))
 
+driver.get('https://the-internet.herokuapp.com/tables')
+sleep(3)
+
+val1 = driver.find_element(By.XPATH, "//table[@id='table1']//td[text()='jdoe@hotmail.com']/following-sibling::td[2]")
+print('val1 found')
+
+val2 = driver.find_element(By.XPATH,"//table[@id='table1']//td[text()='Bach']/following-sibling::td[5]/a[2]")
+print('val2 found')
+
+t2 = driver.find_element(By.XPATH, "//table[2]")
+print('t2 found')
+
+parent_found = driver.find_element(By.XPATH,"//table[@id='table2']//td[text()='$100.00']/parent::tr")
+print('parent_found found')
 driver.quit()
