@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.11 on win32)" generated="2026-03-27T15:52:28.336022" rpa="false" schemaversion="5">
+<suite id="s1" name="Actions" source="C:\Users\azads\OneDrive\Desktop\git\project\Day12\actions.robot">
+<test id="s1-t1" name="scoll to element" line="37">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-27T15:52:29.059145" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T15:52:29.057676" elapsed="3.054030"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-27T15:52:32.113710" elapsed="1.888319"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T15:52:35.009201" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T15:52:34.003470" elapsed="1.006730"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="content"]/ul/li[25]/a</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-27T15:52:35.010200" elapsed="0.313262"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T15:52:38.329077" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T15:52:35.324462" elapsed="3.005641"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-27T15:52:38.331097" elapsed="2.396931"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:52:29.055522" elapsed="11.673505"/>
+</test>
+<status status="PASS" start="2026-03-27T15:52:28.341094" elapsed="12.388842"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Actions" id="s1" pass="1" fail="0" skip="0">Actions</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

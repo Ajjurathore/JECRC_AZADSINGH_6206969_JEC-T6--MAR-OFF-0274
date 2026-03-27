@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.11 on win32)" generated="2026-03-27T12:43:27.235962" rpa="false" schemaversion="5">
+<suite id="s1" name="Abc" source="C:\Users\azads\OneDrive\Desktop\git\project\Day12\abc.robot">
+<test id="s1-t1" name="Opening Chrome Browser" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-27T12:43:27.875284" level="INFO">Opening browser 'FireFox' to base url 'https://www.youtube.com/'.</msg>
+<arg>https://www.youtube.com/</arg>
+<arg>FireFox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T12:43:27.875284" elapsed="128.617367"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-27T12:45:36.506666" elapsed="0.305326"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-27T12:45:36.814992" level="INFO">navigated to youtube</msg>
+<arg>navigated to youtube</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-27T12:45:36.812990" elapsed="0.002002"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>navigated to youtube</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-27T12:45:36.815984" elapsed="0.001007"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T12:45:39.828109" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T12:45:36.818222" elapsed="3.010879"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-27T12:45:39.830106" elapsed="2.481254"/>
+</kw>
+<doc>Chrome browser navigating to https://www.youtube.com</doc>
+<status status="PASS" start="2026-03-27T12:43:27.871285" elapsed="134.441490"/>
+</test>
+<doc>Opening of browsers</doc>
+<status status="PASS" start="2026-03-27T12:43:27.239986" elapsed="135.074198"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Abc" id="s1" pass="1" fail="0" skip="0">Abc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

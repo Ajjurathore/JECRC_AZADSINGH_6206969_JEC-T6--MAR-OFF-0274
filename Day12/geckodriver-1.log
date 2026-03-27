@@ -1,0 +1,56 @@
+1774595720395	geckodriver	INFO	Listening on 127.0.0.1:56253
+1774595723577	mozrunner::runner	INFO	Running command: "C:\\Users\\azads\\.cache\\selenium\\firefox\\win64\\149.0\\firefox.exe" "--marionette" "--remote-debugging- ... 4" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\azads\\AppData\\Local\\Temp\\rust_mozprofileHvPly4"
+Dynamically enable window occlusion 0
+1774595725537	Marionette	INFO	Marionette enabled
+1774595725748	Marionette	INFO	Listening on port 49726
+Read port: 49726
+WebDriver BiDi listening on ws://127.0.0.1:56254
+1774595725862	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+1774595734040	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval, line 5235: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/KgIJfcKS2CxPN3l7ve8r4kGzdtIJOAO4xkt8HhbjKTA.js line 2 > eval line 5235 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/s/player/8e54e4ea/player_es6.vflset/en_US/base.js, line 6637: Script terminated by timeout at:
+XX@https://www.youtube.com/s/player/8e54e4ea/player_es6.vflset/en_US/base.js:6637:400
+@https://www.youtube.com/s/player/8e54e4ea/player_es6.vflset/en_US/base.js:6640:423
+@https://www.youtube.com/s/player/8e54e4ea/player_es6.vflset/en_US/base.js:8620:374
+
+1774595739946	Marionette	INFO	Stopped listening on port 49726
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: can't access property "isChromeWindow", aWindow is null
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: Composit[GFXorBrid1[GFX1-]: CompositorBridgeChgeChild receives IPC close with ild rec-]:reason=Abno CoermalivShutdownes mIPCposi close with ret
+orBridgeChason=Abild receives IPC clnormalShutdown
+ose with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
