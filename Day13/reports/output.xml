@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-03-28T12:35:17.319575" rpa="false" schemaversion="5">
+<suite id="s1" name="Js Executer" source="C:\Users\azads\OneDrive\Desktop\git\project\Day13\js_executer.robot">
+<test id="s1-t1" name="handling js" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-28T12:35:17.803146" level="INFO">Opening browser 'chrome' to base url 'https://inc.in/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-28T12:35:17.802467" elapsed="6.517512"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-28T12:35:24.320522" elapsed="0.157935"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T12:35:26.479808" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T12:35:24.478897" elapsed="2.001147"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-03-28T12:35:26.481557" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-03-28T12:35:26.480763" elapsed="0.022441"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T12:35:27.505271" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T12:35:26.503920" elapsed="1.001565"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-28T12:35:27.506179" elapsed="2.342370"/>
+</kw>
+<status status="PASS" start="2026-03-28T12:35:17.800817" elapsed="12.048504"/>
+</test>
+<status status="PASS" start="2026-03-28T12:35:17.321244" elapsed="12.529801"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Js Executer" id="s1" pass="1" fail="0" skip="0">Js Executer</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-03-30T15:17:49.835274" rpa="false" schemaversion="5">
+<suite id="s1" name="File Upload" source="C:\Users\azads\OneDrive\Desktop\git\project\Day14\file_upload.robot">
+<test id="s1-t1" name="Download" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:17:50.392315" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T15:17:50.391785" elapsed="7.237340"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T15:17:57.630243" elapsed="0.049933"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:17:57.682102" level="INFO">Clicking element 'xpath=//a[@href='/download']'.</msg>
+<arg>xpath=//a[@href='/download']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:17:57.680988" elapsed="0.572440"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:17:59.255583" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:17:58.254188" elapsed="1.001700"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:17:59.257078" level="INFO">Clicking element 'xpath=//a[@href='download/file.txt']'.</msg>
+<arg>xpath=//a[@href='download/file.txt']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:17:59.256621" elapsed="0.480699"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:18:00.742265" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:17:59.738940" elapsed="1.003592"/>
+</kw>
+<kw name="Wait Until Created" owner="OperatingSystem">
+<msg time="2026-03-30T15:18:00.744075" level="INFO" html="true">'&lt;a href="file://C:\Users\azads\Downloads\file.txt"&gt;C:\Users\azads\Downloads\file.txt&lt;/a&gt;' was created.</msg>
+<arg>${check_download}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the given file or directory is created.</doc>
+<status status="PASS" start="2026-03-30T15:18:00.743285" elapsed="0.000951"/>
+</kw>
+<kw name="File Should Exist" owner="OperatingSystem">
+<msg time="2026-03-30T15:18:00.746240" level="INFO" html="true">File '&lt;a href="file://C:\Users\azads\Downloads\file.txt"&gt;C:\Users\azads\Downloads\file.txt&lt;/a&gt;' exists.</msg>
+<arg>${check_download}</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<status status="PASS" start="2026-03-30T15:18:00.744893" elapsed="0.001492"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>is donwload sciss</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T15:18:00.747182" elapsed="0.001327"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T15:18:00.749935" elapsed="2.652596"/>
+</kw>
+<status status="PASS" start="2026-03-30T15:17:50.389672" elapsed="13.013958"/>
+</test>
+<status status="PASS" start="2026-03-30T15:17:49.838386" elapsed="13.567087"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="File Upload" id="s1" pass="1" fail="0" skip="0">File Upload</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
