@@ -1,0 +1,33 @@
+*** Settings ***
+Library    SeleniumLibrary
+Library    ../config/env_loader.py
+Library    env_loader
+
+*** Variables ***
+${BROWSER}    chrome
+${ENV}    qa
+
+*** Keywords ***
+Load Environment
+    Load Env    ${ENV}
+    
+    ${url}=  Get Env    baseurl
+    ${email}=  Get Env    user_email
+    ${pwd}=  Get Env    user_password
+     
+    Set Global Variable    ${BASES_URL}    ${url}
+    Set Global Variable    ${USER_EMAIL}    ${email}
+    Set Global Variable    ${USER_PWD}    ${pwd}
+    
+
+Open Application
+    [Documentation]    opens the application
+    [Arguments]    ${url}
+    Open Browser   ${BASE_
+    URL}    ${BROWSER}
+    Maximize Browser Window
+
+Close Application
+    Close All Browsers    
+
+

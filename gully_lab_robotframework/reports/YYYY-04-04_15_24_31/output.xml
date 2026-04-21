@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.11 on win32)" generated="2026-04-04T15:24:32.214606" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="C:\Users\azads\OneDrive\Desktop\git\Assesment\Week4\Gullylabs\tests\functional\test_login.robot">
+<test id="s1-t1" name="TC01 login" line="9">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:24:32.877267" level="INFO">Opening browser 'chrome' to base url 'https://gullylabs.com/account/login'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T15:24:32.877267" elapsed="8.848208"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T15:24:41.725475" elapsed="0.060239"/>
+</kw>
+<arg>https://gullylabs.com/account/login</arg>
+<doc>opens the application</doc>
+<status status="PASS" start="2026-04-04T15:24:32.875278" elapsed="8.911432"/>
+</kw>
+<kw name="Login Page" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:24:41.790994" level="INFO">Typing text 'azadsr158@gmail.com' into text field 'xpath=//*[@id="CustomerEmail"]'.</msg>
+<arg>${email}</arg>
+<arg>${given_mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T15:24:41.788989" elapsed="0.419256"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:24:42.209299" level="INFO">Typing text 'Pranjal@123' into text field 'xpath=//*[@id="CustomerPassword"]'.</msg>
+<arg>${password}</arg>
+<arg>${given_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T15:24:42.208245" elapsed="0.328784"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:24:42.538029" level="INFO">Clicking button 'xpath=//*[@id="customer_login"]/ul/li[1]/button'.</msg>
+<arg>${click}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T15:24:42.537029" elapsed="3.864696"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:24:46.665240" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-04T15:24:46.666687" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression href="/account/login" because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=146.0.7680.178); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6530429c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff652d6a0d0+14e90]
+	chromedriver!(No symbol) [0x7ff652acdb2d]
+	chromedriver!(No symbol) [0x7ff652ad5ab1]
+	chromedriver!(No symbol) [0x7ff652ad8bc5]
+	chromedriver!(No symbol) [0x7ff652ad8c8f]
+	chromedriver!(No symbol) [0x7ff652b2631e]
+	chromedriver!(No symbol) [0x7ff652b26eac]
+	chromedriver!(No symbol) [0x7ff652b77017]
+	chromedriver!(No symbol) [0x7ff652b73b9b]
+	chromedriver!(No symbol) [0x7ff652b19298]
+	chromedriver!(No symbol) [0x7ff652b1a183]
+	chromedriver!GetHandleVerifier [0x7ff65306de0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff653068588+313348]
+	chromedriver!GetHandleVerifier [0x7ff653089d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff652d86785+31545]
+	chromedriver!GetHandleVerifier [0x7ff652d8facc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff652d73634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff652d737e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff652d57e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffa2235e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffa2324c48c+2c]
+</msg>
+<arg>xpath=href="/account/login"</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2026-04-04T15:24:46.402723" elapsed="0.276961">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression href="/account/login" because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=146.0.7680.178); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6530429c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff652d6a0d0+14e90]
+	chromedriver!(No symbol) [0x7ff652acdb2d]
+	chromedriver!(No symbol) [0x7ff652ad5ab1]
+	chromedriver!(No symbol) [0x7ff652ad8bc5]
+	chromedriver!(No symbol) [0x7ff652ad8c8f]
+	chromedriver!(No symbol) [0x7ff652b2631e]
+	chromedriver!(No symbol) [0x7ff652b26eac]
+	chromedriver!(No symbol) [0x7ff652b77017]
+	chromedriver!(No symbol) [0x7ff652b73b9b]
+	chromedriver!(No symbol) [0x7ff652b19298]
+	chromedriver!(No symbol) [0x7ff652b1a183]
+	chromedriver!GetHandleVerifier [0x7ff65306de0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff653068588+313348]
+	chromedriver!GetHandleVerifier [0x7ff653089d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff652d86785+31545]
+	chromedriver!GetHandleVerifier [0x7ff652d8facc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff652d73634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff652d737e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff652d57e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffa2235e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffa2324c48c+2c]
+</status>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=href="/account/logout"</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2026-04-04T15:24:46.680685" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-04T15:24:46.680685" elapsed="0.000000"/>
+</kw>
+<arg>azadsr158@gmail.com</arg>
+<arg>Pranjal@123</arg>
+<status status="FAIL" start="2026-04-04T15:24:41.787712" elapsed="4.893977">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression href="/account/login" because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=146.0.7680.178); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6530429c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff652d6a0d0+14e90]
+	chromedriver!(No symbol) [0x7ff652acdb2d]
+	chromedriver!(No symbol) [0x7ff652ad5ab1]
+	chromedriver!(No symbol) [0x7ff652ad8bc5]
+	chromedriver!(No symbol) [0x7ff652ad8c8f]
+	chromedriver!(No symbol) [0x7ff652b2631e]
+	chromedriver!(No symbol) [0x7ff652b26eac]
+	chromedriver!(No symbol) [0x7ff652b77017]
+	chromedriver!(No symbol) [0x7ff652b73b9b]
+	chromedriver!(No symbol) [0x7ff652b19298]
+	chromedriver!(No symbol) [0x7ff652b1a183]
+	chromedriver!GetHandleVerifier [0x7ff65306de0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff653068588+313348]
+	chromedriver!GetHandleVerifier [0x7ff653089d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff652d86785+31545]
+	chromedriver!GetHandleVerifier [0x7ff652d8facc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff652d73634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff652d737e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff652d57e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffa2235e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffa2324c48c+2c]
+</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T15:24:46.687690" elapsed="2.624446"/>
+</kw>
+<status status="PASS" start="2026-04-04T15:24:46.685686" elapsed="2.626450"/>
+</kw>
+<doc>cheching login</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-04T15:24:32.846356" elapsed="16.465780">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression href="/account/login" because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=146.0.7680.178); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6530429c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff652d6a0d0+14e90]
+	chromedriver!(No symbol) [0x7ff652acdb2d]
+	chromedriver!(No symbol) [0x7ff652ad5ab1]
+	chromedriver!(No symbol) [0x7ff652ad8bc5]
+	chromedriver!(No symbol) [0x7ff652ad8c8f]
+	chromedriver!(No symbol) [0x7ff652b2631e]
+	chromedriver!(No symbol) [0x7ff652b26eac]
+	chromedriver!(No symbol) [0x7ff652b77017]
+	chromedriver!(No symbol) [0x7ff652b73b9b]
+	chromedriver!(No symbol) [0x7ff652b19298]
+	chromedriver!(No symbol) [0x7ff652b1a183]
+	chromedriver!GetHandleVerifier [0x7ff65306de0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff653068588+313348]
+	chromedriver!GetHandleVerifier [0x7ff653089d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff652d86785+31545]
+	chromedriver!GetHandleVerifier [0x7ff652d8facc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff652d73634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff652d737e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff652d57e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffa2235e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffa2324c48c+2c]
+</status>
+</test>
+<status status="FAIL" start="2026-04-04T15:24:32.220601" elapsed="17.093851"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Login" id="s1" pass="0" fail="1" skip="0">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

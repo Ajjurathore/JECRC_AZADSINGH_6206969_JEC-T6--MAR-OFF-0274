@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.11 on win32)" generated="2026-04-04T15:23:11.985602" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="C:\Users\azads\OneDrive\Desktop\git\Assesment\Week4\Gullylabs\tests\functional\test_login.robot">
+<test id="s1-t1" name="TC01 login" line="9">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:23:12.582791" level="INFO">Opening browser 'chrome' to base url 'https://gullylabs.com/account/login'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T15:23:12.581793" elapsed="8.312073"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T15:23:20.895269" elapsed="0.039645"/>
+</kw>
+<arg>https://gullylabs.com/account/login</arg>
+<doc>opens the application</doc>
+<status status="PASS" start="2026-04-04T15:23:12.579787" elapsed="8.355127"/>
+</kw>
+<kw name="Login Page" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:23:20.942043" level="INFO">Typing text 'azadsr158@gmail.com' into text field 'xpath=//*[@id="CustomerEmail"]'.</msg>
+<arg>${email}</arg>
+<arg>${given_mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T15:23:20.937496" elapsed="0.450635"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:23:21.389124" level="INFO">Typing text 'Pranjal@123' into text field 'xpath=//*[@id="CustomerPassword"]'.</msg>
+<arg>${password}</arg>
+<arg>${given_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T15:23:21.388131" elapsed="0.260419"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:23:21.649543" level="INFO">Clicking button 'xpath=//*[@id="customer_login"]/ul/li[1]/button'.</msg>
+<arg>${click}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T15:23:21.648550" elapsed="3.554149"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:23:25.707773" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-04T15:23:25.707773" level="FAIL">Page should have contained text 'xpath=href="/account/login"' but did not.</msg>
+<arg>xpath=href="/account/login"</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-04-04T15:23:25.202699" elapsed="0.509312">Page should have contained text 'xpath=href="/account/login"' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>xpath=href="/account/logout"</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-04-04T15:23:25.712011" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-04T15:23:25.712011" elapsed="0.000000"/>
+</kw>
+<arg>azadsr158@gmail.com</arg>
+<arg>Pranjal@123</arg>
+<status status="FAIL" start="2026-04-04T15:23:20.937496" elapsed="4.775735">Page should have contained text 'xpath=href="/account/login"' but did not.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T15:23:25.715957" elapsed="6.620732"/>
+</kw>
+<status status="PASS" start="2026-04-04T15:23:25.714470" elapsed="6.623221"/>
+</kw>
+<doc>cheching login</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-04T15:23:12.558460" elapsed="19.780229">Page should have contained text 'xpath=href="/account/login"' but did not.</status>
+</test>
+<status status="FAIL" start="2026-04-04T15:23:11.990605" elapsed="20.352096"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Login" id="s1" pass="0" fail="1" skip="0">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.11 on win32)" generated="2026-04-04T15:19:08.896632" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="C:\Users\azads\OneDrive\Desktop\git\Assesment\Week4\Gullylabs\tests\functional\test_login.robot">
+<test id="s1-t1" name="TC01 login" line="9">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:19:09.471922" level="INFO">Opening browser 'chrome' to base url 'https://gullylabs.com/account/login'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T15:19:09.470923" elapsed="8.265703"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T15:19:17.737625" elapsed="0.061581"/>
+</kw>
+<arg>https://gullylabs.com/account/login</arg>
+<doc>opens the application</doc>
+<status status="PASS" start="2026-04-04T15:19:09.468923" elapsed="8.330283"/>
+</kw>
+<kw name="Login Page" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:19:17.809202" level="INFO">Typing text 'azadsr158@gmail.com' into text field 'xpath=//*[@id="CustomerEmail"]'.</msg>
+<arg>${email}</arg>
+<arg>${given_mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T15:19:17.804203" elapsed="0.575237"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:19:18.384905" level="INFO">Typing text 'Pranjal@123' into text field 'xpath=//*[@id="CustomerPassword"]'.</msg>
+<arg>${password}</arg>
+<arg>${given_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T15:19:18.380902" elapsed="0.335485"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:19:18.718554" level="INFO">Clicking button 'xpath=//*[@id="customer_login"]/ul/li[1]/button'.</msg>
+<arg>${click}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T15:19:18.717558" elapsed="3.676716"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:19:22.926715" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-04T15:19:22.926715" level="FAIL">Page should have contained text '//*[@id="shopify-section-template--25416428159260__main"]/section/x-grid/x-cell[1]/a' but did not.</msg>
+<arg>//*[@id="shopify-section-template--25416428159260__main"]/section/x-grid/x-cell[1]/a</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-04-04T15:19:22.394274" elapsed="0.535377">Page should have contained text '//*[@id="shopify-section-template--25416428159260__main"]/section/x-grid/x-cell[1]/a' but did not.</status>
+</kw>
+<arg>azadsr158@gmail.com</arg>
+<arg>Pranjal@123</arg>
+<status status="FAIL" start="2026-04-04T15:19:17.803206" elapsed="5.127666">Page should have contained text '//*[@id="shopify-section-template--25416428159260__main"]/section/x-grid/x-cell[1]/a' but did not.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T15:19:22.933874" elapsed="6.578910"/>
+</kw>
+<status status="PASS" start="2026-04-04T15:19:22.931893" elapsed="6.580891"/>
+</kw>
+<doc>cheching login</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-04T15:19:09.446923" elapsed="20.065861">Page should have contained text '//*[@id="shopify-section-template--25416428159260__main"]/section/x-grid/x-cell[1]/a' but did not.</status>
+</test>
+<status status="FAIL" start="2026-04-04T15:19:08.901631" elapsed="20.613151"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Login" id="s1" pass="0" fail="1" skip="0">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

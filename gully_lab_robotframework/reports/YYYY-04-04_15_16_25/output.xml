@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.11 on win32)" generated="2026-04-04T15:16:26.619818" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="C:\Users\azads\OneDrive\Desktop\git\Assesment\Week4\Gullylabs\tests\functional\test_login.robot">
+<test id="s1-t1" name="TC01 login" line="6">
+<kw name="Login Page" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T15:16:27.466888" level="INFO">Typing text 'azadsr158@gmail.com' into text field 'xpath=//*[@id="CustomerEmail"]'.</msg>
+<msg time="2026-04-04T15:16:27.466888" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-04T15:16:27.466888" level="FAIL">No browser is open.</msg>
+<arg>${email}</arg>
+<arg>${given_mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-04T15:16:27.465404" elapsed="0.006977">No browser is open.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>${given_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-04T15:16:27.472381" elapsed="0.001005"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${click}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-04T15:16:27.473386" elapsed="0.000993"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>//*[@id="shopify-section-template--25416428159260__main"]/section/x-grid/x-cell[1]/a</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-04-04T15:16:27.474379" elapsed="0.000000"/>
+</kw>
+<arg>azadsr158@gmail.com</arg>
+<arg>Pranjal@123</arg>
+<status status="FAIL" start="2026-04-04T15:16:27.453224" elapsed="0.022159">No browser is open.</status>
+</kw>
+<doc>cheching login</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-04T15:16:27.424468" elapsed="0.050915">No browser is open.</status>
+</test>
+<status status="FAIL" start="2026-04-04T15:16:26.625841" elapsed="0.851039"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Login" id="s1" pass="0" fail="1" skip="0">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

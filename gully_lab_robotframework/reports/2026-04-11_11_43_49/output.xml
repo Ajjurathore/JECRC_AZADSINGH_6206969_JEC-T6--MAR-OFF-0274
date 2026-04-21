@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.11 on win32)" generated="2026-04-11T11:43:50.723820" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="C:\Users\azads\OneDrive\Desktop\git\Assesment\Week4\Gullylabs\tests\functional\test_login.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-11T11:43:51.481568" elapsed="0.002998"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-11T11:43:51.485573" level="INFO">${url} = https://gullylabs.com/</msg>
+<var>${url}</var>
+<arg>baseurl</arg>
+<status status="PASS" start="2026-04-11T11:43:51.484566" elapsed="0.001007"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-11T11:43:51.485573" level="INFO">${email} = None</msg>
+<var>${email}</var>
+<arg>user_email</arg>
+<status status="PASS" start="2026-04-11T11:43:51.485573" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-11T11:43:51.486578" level="INFO">${pwd} = None</msg>
+<var>${pwd}</var>
+<arg>user_password</arg>
+<status status="PASS" start="2026-04-11T11:43:51.486578" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-11T11:43:51.488574" level="INFO">${BASES_URL} = https://gullylabs.com/</msg>
+<arg>${BASES_URL}</arg>
+<arg>${url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-11T11:43:51.486578" elapsed="0.001996"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-11T11:43:51.490574" level="INFO">${USER_EMAIL} = None</msg>
+<arg>${USER_EMAIL}</arg>
+<arg>${email}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-11T11:43:51.489571" elapsed="0.001999"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-11T11:43:51.493579" level="INFO">${USER_PWD} = None</msg>
+<arg>${USER_PWD}</arg>
+<arg>${pwd}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-11T11:43:51.491570" elapsed="0.003005"/>
+</kw>
+<status status="PASS" start="2026-04-11T11:43:51.479573" elapsed="0.015002"/>
+</kw>
+<test id="s1-t1" name="TC01 login" line="10">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-11T11:43:51.498578" level="FAIL">Variable '${BASE_' was not closed properly.</msg>
+<arg>${BASE_</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-11T11:43:51.497575" elapsed="0.001003">Variable '${BASE_' was not closed properly.</status>
+</kw>
+<kw name="URL}">
+<arg>${BROWSER}</arg>
+<status status="NOT RUN" start="2026-04-11T11:43:51.498578" elapsed="0.000000"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-04-11T11:43:51.499917" elapsed="0.000000"/>
+</kw>
+<arg>https://gullylabs.com/account/login</arg>
+<doc>opens the application</doc>
+<status status="FAIL" start="2026-04-11T11:43:51.496582" elapsed="0.003335">Variable '${BASE_' was not closed properly.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-11T11:43:51.502008" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-11T11:43:51.500918" elapsed="0.001090"/>
+</kw>
+<doc>checking login</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-11T11:43:51.494575" elapsed="0.008490">Setup failed:
+Variable '${BASE_' was not closed properly.</status>
+</test>
+<status status="FAIL" start="2026-04-11T11:43:50.729821" elapsed="0.776249"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Login" id="s1" pass="0" fail="1" skip="0">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
